@@ -1,0 +1,24 @@
+{
+    "name": "clarkf/klout-simple",
+    "description": "A flexible, reusable Klout.com API wrapper.",
+    "authors": [
+        {
+            "name": "Clark Fischer",
+            "email": "clark.fischer@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzle/guzzle": "3.7.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*",
+        "squizlabs/php_codesniffer": "1.4.*",
+        "phpmd/phpmd": "1.5.*",
+        "apigen/apigen": "2.8.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "KloutSimple": "src/"
+        }
+    }
+}
