@@ -13,7 +13,7 @@ test:
 md:
 	@${PHPMD} ${SRC_DIR} \
 		text \
-		cleancode,codesize,controversial,design,naming,unusedcode
+		codesize,unusedcode,naming
 
 cs:
 	@${PHPCS} ${SRC_DIR}
