@@ -113,11 +113,27 @@ abstract class KloutClient
         return $this->handleResponse($response);
     }
 
+    /**
+     * Determine whether or not a `Response` is an error.
+     *
+     * @param Response $response The response to check
+     *
+     * @return boolean `true` if it is an error
+     */
     public function isError(Response $response)
     {
         return !$response->isSuccessful();
     }
 
+    /**
+     * Handle an error.  The current, unsophisticated method is to just throw
+     * a plain old exception.
+     *
+     * @param Response $response The erroring response to handle
+     *
+     * @return void
+     * @throws Exception
+     */
     public function handleError(Response $response)
     {
         $data = json_decode($response->getBody());
@@ -125,6 +141,14 @@ abstract class KloutClient
         throw new \Exception($data->description);
     }
 
+    /**
+     * Handle a response.  The default implementation is to simply parse its
+     * body from JSON into a `stdObject` and return that.
+     *
+     * @param Response $response The response object to handle
+     *
+     * @return mixed JSON Response
+     */
     public function handleResponse(Response $response)
     {
         $body = json_decode($response->getBody());
