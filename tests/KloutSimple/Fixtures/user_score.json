@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 28 Aug 2013 01:30:21 GMT
+Server: Mashery Proxy
+X-Mashery-Responder: prod-j-worker-us-west-1b-18.mashery.com
+transfer-encoding: chunked
+Connection: keep-alive
+
+
+{"score":86.73029496119551,"scoreDelta":{"dayChange":-0.002878793553222181,"weekChange":-0.326474036933206,"monthChange":0.07823261459407149},"bucket":"80-89"}

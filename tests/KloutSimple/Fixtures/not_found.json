@@ -1,0 +1,10 @@
+HTTP/1.1 596 596
+Content-Type: text/xml
+Date: Wed, 28 Aug 2013 01:33:26 GMT
+Server: Mashery Proxy
+X-Mashery-Error-Code: ERR_596_SERVICE_NOT_FOUND
+Content-Length: 30
+Connection: keep-alive
+
+
+<h1>596 Service Not Found</h1>

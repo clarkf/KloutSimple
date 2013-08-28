@@ -1,0 +1,11 @@
+HTTP/1.1 403 Forbidden
+Content-Type: application/json
+Date: Wed, 28 Aug 2013 01:25:56 GMT
+Server: Mashery Proxy
+X-Mashery-Error-Code: ERR_403_DEVELOPER_INACTIVE
+X-Mashery-Responder: prod-j-worker-us-west-1b-20.mashery.com
+Content-Length: 88
+Connection: keep-alive
+
+
+{"error":403, "description":"Invalid or unprovided API key. All calls must have a key."}
